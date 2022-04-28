@@ -1,0 +1,393 @@
+@import url(//db.onlinewebfonts.com/c/900f8add35323c44ee840c611ed9a7a5?family=Pokemon+Classic);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pokemon Classic", Arial;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  small {
+    font-family: Arial;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/wallpaper.jpg');
+    background-size: 100%;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .body::-webkit-scrollbar, .body-cadastro::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/logo.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .githubImage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  #message {
+    padding: 10px;
+    background-color: rgb(247, 231, 162);
+    color: #000000;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.2);
+  }
+
+  .captureButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .captureButton img {
+    margin-top: -10px;
+  }
+
+  .body {
+    width: 90%;
+    height: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.8);
+    overflow:auto; 
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    background-image: url('../img/pokedex1.png');
+    background-color: rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: 100%;
+    background-position-y: -5px;
+    transition: .3s;
+    font-size: 10px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card p {
+    margin: 5px;
+  }
+
+  
+  .backButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 11px;
+  }
+
+  .details-image {
+    max-width: 50%;
+  }
+
+  .details-image img {
+    width: 150%;
+  }
+
+  .details-infos {
+    max-width: 50%;
+    background-image: url('../img/pokedex2.png');
+    background-color: rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: 50%;
+    background-position: center;
+  }
+
+  .details-infos p{
+    margin-bottom: 15px;
+  }
+
+  .cancelButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-cadastro {
+    width: 90%;
+    height: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px; 
+    background-image: url('../img/pokedex2.png');
+    background-color: rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: 40%;
+    background-position: center;
+    overflow:auto; 
+  }
+
+  .cadastro {
+    margin-top: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .cadastro-infos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .input {
+    margin: 10px;
+    font-size: 8px;
+  }
+
+  .select {
+    margin: 10px;
+    width: 190px;
+    font-size: 8px;
+  }
+
+  .registerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registerButton img {
+    margin-bottom: -5px;
+  }
+
+  #submitButton {
+    background: transparent;
+    border: none;
+  }
+
+  #submitButton:hover {
+    cursor: pointer;
+  }
+
+  #footer {
+    margin-top: 10px;
+  }
+
+/* ------------------------------------------------------Tipos-------------------------------------------------- */
+
+#Inseto {
+  background-color: SeaGreen;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Noturno {
+  background-color: DimGrey;
+  color: White;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Dragão {
+  background: linear-gradient(rgba(0, 153, 204, 0.7), transparent);
+  background-color: IndianRed;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Elétrico {
+  background-color: Gold;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Fada {
+  background-color: LightPink;
+  color: Black;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Lutador {
+  background-color: Chocolate;
+  color: Black;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Fogo {
+  background-color: DarkOrange;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Voador {
+  background: linear-gradient(rgba(0, 191, 255, 0.7), transparent);
+  background-color: DarkSlateBlue;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Fantasma {
+  background-color: MediumPurple;
+  color: Black;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Grama {
+  background-color: MediumSeaGreen;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Terra {
+  background-color: DarkGoldenrod;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Gelo {
+  background-color: LightSkyBlue;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Normal {
+  background-color: PeachPuff;
+  color: Black;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Venenoso {
+  background-color: DarkOrchid;
+  color: White;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Psíquico {
+  background-color: Violet;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Pedra {
+  background-color: SaddleBrown;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Aço {
+  background-color: LightSlateGray;
+  color: Black;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+#Água {
+  background-color: DodgerBlue;
+  padding: 2px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+
+
