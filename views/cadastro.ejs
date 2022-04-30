@@ -1,148 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Pokedéx/Captura</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokedéx | Cadastro</title>
 </head>
-
 <body>
-    <nav id='navbar'>
-        <a href="https://github.com/JohnSulliman/pokedex-mvc" class='githubImage'>
-            <img src='img/eevee.gif' width='70rem' alt='eevee' />
-            <img src='img/github.png' width='60rem'/>
-        </a>
-    </nav>
-
     <header>
-        <div class='cancelButton'>
-            <a href='/'>
-                <img src='img/pokebola.png' width='35px' alt='pokebola'/>
-            </a>
-
-            <img src='img/cancel.png' width='60px' alt='cancel-button' />
-        </div>
-
+    <nav>
+        <article>
+            <h1>
+                <a href="">Cadastro</a>
+            </h1>
+        </article>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+        </ul>       
+    </nav>
+    
+        <h1 id="tt_capa">Cadastrar Pokémon</h1>
     </header>
-    <section class='body-cadastro'>
-        <h1>Captura</h1>
-        <small>Capture seu pokémon aqui!</small>
-
-        <form id='form' action='/sent' method='POST'> 
-            <div class='cadastro'>
-                <section>
-                    <h3>Informações Principais</h3>
-                    <div class='cadastro-infos'>
-                        <div>
-                            <label for='name'>Nome: </label>
-                            <input class='input' name='name' required />
-                        </div>
-                        <div>
-                            <label for='image'>Imagem: </label>
-                            <input class='input' placeholder='URL da imagem' name='image' required />
-                        </div>
-                        <div>
-                            <label for='type1'>Tipo: </label>
-                            <select class='select' name='type1' required >
-                                <option value=''>Tipo primário</option>
-                                <option value='Inseto'>Inseto</option>
-                                <option value='Noturno'>Noturno</option>
-                                <option value='Dragão'>Dragão</option>
-                                <option value='Elétrico'>Elétrico</option>
-                                <option value='Fada'>Fada</option>
-                                <option value='Lutador'>Lutador</option>
-                                <option value='Fogo'>Fogo</option>
-                                <option value='Voador'>Voador</option>
-                                <option value='Fantasma'>Fantasma</option>
-                                <option value='Grama'>Grama</option>
-                                <option value='Terra'>Terra</option>
-                                <option value='Gelo'>Gelo</option>
-                                <option value='Normal'>Normal</option>
-                                <option value='Venenoso'>Venenoso</option>
-                                <option value='Psíquico'>Psíquico</option>
-                                <option value='Pedra'>Pedra</option>
-                                <option value='Aço'>Aço</option>
-                                <option value='Água'>Água</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for='type2'>Tipo: </label>
-                            <select class='select' name='type2'>
-                                <option value=''>Tipo secundário</option>
-                                <option value='Inseto'>Inseto</option>
-                                <option value='Noturno'>Noturno</option>
-                                <option value='Dragão'>Dragão</option>
-                                <option value='Elétrico'>Elétrico</option>
-                                <option value='Fada'>Fada</option>
-                                <option value='Lutador'>Lutador</option>
-                                <option value='Fogo'>Fogo</option>
-                                <option value='Voador'>Voador</option>
-                                <option value='Fantasma'>Fantasma</option>
-                                <option value='Grama'>Grama</option>
-                                <option value='Terra'>Terra</option>
-                                <option value='Gelo'>Gelo</option>
-                                <option value='Normal'>Normal</option>
-                                <option value='Venenoso'>Venenoso</option>
-                                <option value='Psíquico'>Psíquico</option>
-                                <option value='Pedra'>Pedra</option>
-                                <option value='Aço'>Aço</option>
-                                <option value='Água'>Água</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for='description'>Descrição: </label>
-                            <input class='input' name='description' />
-                        </div>
-                        <div>
-                            <label for='number'>Número: </label>
-                            <input class='input' type='number' name='number' min='001' required />
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>Adicionais</h3>
-                    <div class='cadastro-infos'>
-                        <div>
-                            <label for='height'>Altura: </label>
-                            <input class='input' type='number' name='height' step="0.01" min='0.01' />
-                        </div>
-                        <div>
-                            <label for='weight'>Peso: </label>
-                            <input class='input' type='number' name='weight' step="0.01" min='0.01' />
-                        </div>
-                        <div>
-                            <label for='category'>Categoria: </label>
-                            <input class='input' name='category' />
-                        </div>
-                        <div>
-                            <label for='abilities'>Habilidades: </label>
-                            <input class='input' name='abilities' />
-                        </div>
-                    </div>
-                </section>
+    <section id="cadastro" >
+        <form action="/cadastrar" method="POST">
+            <div>
+                <label for="numero">Número: </label>
+                <input type="text" name="numero" id="numero" placeholder="Digite o número" required>
             </div>
-            
-            <div class='registerButton'>
-                <img src='img/gotcha.gif' width='60px' alt='gotcha!'/>
-
-                <button id='submitButton' type='submit'>
-                    <img src='img/pokebola.png' width='35px' alt='pokebola'/>
-                </button>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
             </div>
+            <div>
+                <label for="tipo">Tipo: </label>
+                <input type="text" name="tipo" id="tipo" placeholder="Digite o tipo" required>
+            </div>
+            <div>
+                <label for="imagem">Imagem: </label>
+                <input type="text" name="imagem" id="imagem" placeholder="Digite o link da imagem" required>
+            </div>
+            <div>
+                <label for="descricao">Descrição: </label>
+                <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" required>
+            </div>
+            <div>
+                <label for="altura">Altura: </label>
+                <input type="text" name="altura" id="altura" placeholder="Digite a altura" required>
+            </div>
+            <div>
+                <label for="peso">Peso: </label>
+                <input type="text" name="peso" id="peso" placeholder="Digite o peso" required>
+            </div>
+            <div>
+                <label for="categoria">Categoria: </label>
+                <input type="text" name="categoria" id="categoria" placeholder="Digite a categoria" required>
+            </div>
+            <div>
+                <label for="habilidade">Habilidade: </label>
+                <input type="text" name="habilidade" id="habilidade" placeholder="Digite a habilidade" required>
+            </div>
+            <button type="submit">Cadastrar</button>
         </form>
     </section>
-
-    <footer id='footer'>
-        <small>
-            ©2021 Pokémon. TM, ®Nintendo.
-        </small>
-    </footer>
-
     <script src="/js/script.js"></script>
 </body>
-
 </html>
