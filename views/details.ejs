@@ -8,34 +8,37 @@
     <title>Pokedéx | Detalhes</title>
 </head>
 <body>
-    <nav>
-        <header>
-            <h1 id="tt_capa">
-                <a href="/">Pokedex</a>
-            </h1>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/cadastro">Cadastro</a></li>
-            </ul>     
-        </header>
-    </nav>
-    <section id="pokedex-det">
+    
+    <header class="container-menu">
+
+        <h1 id="titulo-cabecalho">
+            <a href="/"><img src="../img/logo.png" width="25%" alt=""></a>
+        </h1>
+                
+    </header>
+
+    <section id="cards-details">
         
-            <div class="card-det" href="/details/index">
+            <div class="card-details" href="/details/index">
                 
                 
                 <img src="<%= pokemon.imagem %>"  alt="">
+                    <div id="card-decricao-details">Descrição: <%= pokemon.descricao %></div>
                     <div>Nome: <%= pokemon.nome %></div>
+                    <div>Habilidade: <%= pokemon.habilidade %></div>
                     <div>Tipo: <%= pokemon.tipo %></div>
-                    <div>Descrição: <%= pokemon.descricao %></div>
+                    <div>Categoria: <%= pokemon.categoria %></div>
                     <div>Altura: <%= pokemon.altura %></div>
                     <div>Peso: <%= pokemon.peso %></div>
-                    <div>Categoria: <%= pokemon.categoria %></div>
-                    <div>Habilidade: <%= pokemon.habilidade %></div>
             
         </div>
          
     </section>
+
+    <footer class="container-rodape">
+        <a href="https://github.com/leandroespindula" target="_blank">Criado por Leandro Espindula</a>
+        <img id="github-logo" src="../img/github.png" alt="github" width="4%">
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>

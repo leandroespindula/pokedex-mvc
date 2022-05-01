@@ -5,65 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/public/img/">
     <title>Pokedéx | Cadastro</title>
 </head>
 <body>
-    <header>
-    <nav>
-        <article>
-            <h1>
-                <a href="">Cadastro</a>
-            </h1>
-        </article>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/cadastro">Cadastro</a></li>
-        </ul>       
-    </nav>
-    
-        <h1 id="tt_capa">Cadastrar Pokémon</h1>
+
+    <header class="container-menu">
+
+        <h1 id="titulo-cabecalho">
+            <a href="/"><img src="../img/logo.png" width="25%" alt=""></a>
+        </h1>
+                
     </header>
-    <section id="cadastro" >
+        
+    </header>
+    <section class="container-cadastro" >
         <form action="/cadastrar" method="POST">
-            <div>
-                <label for="numero">Número: </label>
-                <input type="text" name="numero" id="numero" placeholder="Digite o número" required>
+
+            <div class="itens-option">
+                <label for="tipo">Tipo: </label>
+                <select required name="tipo" id="tipo">
+                    <option value=""></option>
+                    <option value="Tipo: Bug">Bug</option>
+                    <option value="Tipo: Dragao">Dragao</option>
+                    <option value="Tipo: Fada">Fada</option>
+                    <option value="Tipo: Fogo">Fogo</option>
+                    <option value="Tipo: Ghost">Ghost</option>
+                    <option value="Tipo: Ground">Ground</option>
+                    <option value="Tipo: Normal">Normal</option>
+                    <option value="Tipo: Psíquico">Psíquico</option>
+                    <option value="Tipo: Steel">Steel</option>
+                    <option value="Tipo: Dark">Dark</option>
+                    <option value="Tipo: Eletric">Eletric</option>
+                    <option value="Tipo: Luta">Luta</option>
+                    <option value="Tipo: flying">Flying</option>
+                    <option value="Tipo: Planta">Planta</option>
+                    <option value="Tipo: Ice">Ice</option>
+                    <option value="Tipo: Poison">Poison</option>
+                    <option value="Tipo: Rock">Rock</option>
+                    <option value="Tipo: Agua">Agua</option>
+                </select>
             </div>
-            <div>
+
+            <div class="itens-option">
                 <label for="nome">Nome: </label>
                 <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
             </div>
-            <div>
-                <label for="tipo">Tipo: </label>
-                <input type="text" name="tipo" id="tipo" placeholder="Digite o tipo" required>
-            </div>
-            <div>
+
+            <div class="itens-option">
                 <label for="imagem">Imagem: </label>
-                <input type="text" name="imagem" id="imagem" placeholder="Digite o link da imagem" required>
+                <input type="text" name="imagem" id="imagem" placeholder="Digite a URL da imagem" required>
             </div>
-            <div>
+
+            <div class="itens-option">
                 <label for="descricao">Descrição: </label>
                 <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" required>
             </div>
-            <div>
+            
+            <div class="itens-option"> 
                 <label for="altura">Altura: </label>
                 <input type="text" name="altura" id="altura" placeholder="Digite a altura" required>
             </div>
-            <div>
+            
+            <div class="itens-option">
                 <label for="peso">Peso: </label>
                 <input type="text" name="peso" id="peso" placeholder="Digite o peso" required>
             </div>
-            <div>
+            
+            <div class="itens-option">
                 <label for="categoria">Categoria: </label>
                 <input type="text" name="categoria" id="categoria" placeholder="Digite a categoria" required>
             </div>
-            <div>
+            
+            <div class="itens-option">
                 <label for="habilidade">Habilidade: </label>
                 <input type="text" name="habilidade" id="habilidade" placeholder="Digite a habilidade" required>
             </div>
-            <button type="submit">Cadastrar</button>
+            
+            <button class="itens-option" type="submit">Cadastrar</button>
         </form>
     </section>
+
+    <section id="btn-index">
+        <a href="/"><img src="../img/back.png" width="25%" alt=""></a>
+    </section>
+
+    <footer class="container-rodape">
+        <a href="https://github.com/leandroespindula" target="_blank">Criado por Leandro Espindula</a>
+        <img id="github-logo" src="../img/github.png" alt="github" width="4%">
+    </footer>
+    
     <script src="/js/script.js"></script>
 </body>
 </html>
