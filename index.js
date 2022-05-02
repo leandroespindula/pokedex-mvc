@@ -9,7 +9,7 @@ const pokedex = [
   {
     id: 0,
     nome: "Bulbasaur",
-    tipo: "Tipo: Grass",
+    tipo: "Grass",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
     descricao: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
     altura: 0.7,

@@ -30,6 +30,15 @@ section#btn-cadastro {
   align-items: center;
 }
 
+section#btn-cadastro a{
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 section#cards {
   display: flex;
   justify-content: space-evenly;
@@ -38,11 +47,20 @@ section#cards {
 }
 
 section#cards div.card {
-  width: 20rem;
+  width: 15rem;
   box-shadow: 5px 5px 5px 5px #00000015;
   padding: 10px;
   margin: 3rem 0 5rem 0;
+  cursor: pointer;
+  transition: 0.5s ease;
+  flex-grow: 0.1;
 }
+
+section#cards div.card:hover {
+  transform: scale(1.1);
+}
+
+
 
 section#cards div.card img {
   width: 100%;
@@ -72,13 +90,13 @@ section#cards div.card h3 {
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-decoration: none;
-  
+  margin-top: 1rem;
 }
 
 #cards #btn-detalhes:hover {
   background-color: #b31630;
   color: #fff;
-
+  position: relative;
 }
 
 
@@ -86,7 +104,7 @@ section#cards div.card h3 {
   position: relative;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   padding: 10px;
-
+  position: ;
 }
 
 #cards #btn-detalhes  {
@@ -201,7 +219,7 @@ Estilo da pagina cadastro
   left: 15%; /* one half of the remaining 30% */
 }
 
-section#btn-index {
+section#btn-index a{
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
