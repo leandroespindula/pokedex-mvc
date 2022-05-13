@@ -1,4 +1,4 @@
-## Projeto da Blue-Edtech - Catálogo Super Carros
+## Projeto da Blue-Edtech - Pokedex 
 
 <p align="center">
     <img width= 500 src="public/paraReadme/Pokedex.gif"
